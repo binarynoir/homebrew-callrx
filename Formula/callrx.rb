@@ -9,34 +9,35 @@
 class Callrx < Formula
   desc "Beautiful amateur radio callsign lookup for the terminal"
   homepage "https://github.com/binarynoir/callrx"
-  version "0.4.0"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/binarynoir/callrx/releases/download/v0.4.0/callrx-v0.4.0-aarch64-apple-darwin.tar.gz"
-      sha256 "18bf71a0a77fca4beb5ec5508314124323b95a5569b9583b2ab79a83390130a9"
+      url "https://github.com/binarynoir/callrx/releases/download/v0.5.0/callrx-v0.5.0-aarch64-apple-darwin.tar.gz"
+      sha256 "2f1b472933dc25b2cb89c7fccbd70c1707ed46f554a326556e9d6da5bfae1841"
     end
     on_intel do
-      url "https://github.com/binarynoir/callrx/releases/download/v0.4.0/callrx-v0.4.0-x86_64-apple-darwin.tar.gz"
-      sha256 "338e48b3a11c33e3a0b5ed50bf668a3d7203e1ae6fdba3ad1666d9063dd52dfd"
+      url "https://github.com/binarynoir/callrx/releases/download/v0.5.0/callrx-v0.5.0-x86_64-apple-darwin.tar.gz"
+      sha256 "e07cebbee249343b8fb05038dc156baaeb6d41fd69f19b649c78d6ead3577fd7"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/binarynoir/callrx/releases/download/v0.4.0/callrx-v0.4.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "9c241519be977eb448fc944e3b2cd26cb2d9084d1827fc557e258d5f826d5f24"
+      url "https://github.com/binarynoir/callrx/releases/download/v0.5.0/callrx-v0.5.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "fb052d72a287a6fbe9840a9f4510dde377a70e3b7b05319ff326d1761fd02ab2"
     end
     on_intel do
-      url "https://github.com/binarynoir/callrx/releases/download/v0.4.0/callrx-v0.4.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "a71d7660cd713402ab21e08818a6c51e40831a6f204096cd0ece27a4eb5eaddd"
+      url "https://github.com/binarynoir/callrx/releases/download/v0.5.0/callrx-v0.5.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "711ae602327599fbb3ea33293d17c2662d97044a937dcfe56095ce888637b2f3"
     end
   end
 
   def install
     bin.install "callrx"
     man1.install "man/callrx.1"
+    generate_completions_from_executable(bin/"callrx", "completions")
   end
 
   def caveats
