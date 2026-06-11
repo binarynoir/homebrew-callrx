@@ -3,6 +3,11 @@
 Homebrew tap for [`callrx`](https://github.com/binarynoir/callrx) — beautiful
 amateur radio callsign lookup for the terminal.
 
+[![Support me on Buy Me a Coffee](https://img.shields.io/badge/Support%20me-Buy%20Me%20a%20Coffee-orange?style=for-the-badge&logo=buy-me-a-coffee)](https://buymeacoffee.com/binarynoir)
+[![Support me on Ko-fi](https://img.shields.io/badge/Support%20me-Ko--fi-blue?style=for-the-badge&logo=ko-fi)](https://ko-fi.com/binarynoir)
+
+---
+
 ## Install
 
 ```bash
