@@ -9,28 +9,28 @@
 class Callrx < Formula
   desc "Beautiful amateur radio callsign lookup for the terminal"
   homepage "https://github.com/binarynoir/callrx"
-  version "0.8.0"
+  version "0.8.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/binarynoir/callrx/releases/download/v0.8.0/callrx-v0.8.0-aarch64-apple-darwin.tar.gz"
-      sha256 "b8cedd1479749161c778a8410fd17b83ce03a08a55f505cbf89a656d6b9f0a89"
+      url "https://github.com/binarynoir/callrx/releases/download/v0.8.1/callrx-v0.8.1-aarch64-apple-darwin.tar.gz"
+      sha256 "c49348ff7e29298d457ec4c26b61506fa9aba37a633a684bdc8d0c147918ef5f"
     end
     on_intel do
-      url "https://github.com/binarynoir/callrx/releases/download/v0.8.0/callrx-v0.8.0-x86_64-apple-darwin.tar.gz"
-      sha256 "256f3a3ce3098b33eed341027414a1967f1774655ae0d4ad701b630d24d34221"
+      url "https://github.com/binarynoir/callrx/releases/download/v0.8.1/callrx-v0.8.1-x86_64-apple-darwin.tar.gz"
+      sha256 "d6d93522e41eb76783e51b774d4ce8ef25ba6ee1a247c9bd1aac3f35fbb61511"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/binarynoir/callrx/releases/download/v0.8.0/callrx-v0.8.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "84fdba12feaf0a6862a726d4d3a70e0edd01ee79559eb2a6b0615b2ee4f24c46"
+      url "https://github.com/binarynoir/callrx/releases/download/v0.8.1/callrx-v0.8.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "45548d522cd38bdc5b7594299b06c3ac1e5569eee2be6fd11a0bebd5d71b9712"
     end
     on_intel do
-      url "https://github.com/binarynoir/callrx/releases/download/v0.8.0/callrx-v0.8.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "5a2b8a2f5c7c1e12cfa5f2c7e237af7ce86ffa55aeac4f7d499afdeb1187df00"
+      url "https://github.com/binarynoir/callrx/releases/download/v0.8.1/callrx-v0.8.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "816be01e03e478b4f7786cb189c8b79ff68022051fab0a90cd27ba5a89b03b72"
     end
   end
 
